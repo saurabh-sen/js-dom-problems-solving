@@ -152,6 +152,246 @@
             font-weight: normal;
         }
 
+        /* Quick Revision Tools */
+        .quick-tools {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-container {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            background: white;
+            color: #333;
+        }
+
+        .search-box::placeholder {
+            color: #999;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .quick-btn {
+            padding: 15px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .quick-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .quick-btn:active {
+            transform: translateY(0);
+        }
+
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #333;
+        }
+
+        .stats-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+        }
+
+        .stats-number {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 5px;
+            background: white;
+            padding: 5px;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+        }
+
+        .view-btn {
+            padding: 8px 15px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .view-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Compact View */
+        .compact-view .accordion-body {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .compact-view .example-link {
+            padding: 12px 16px;
+        }
+
+        .compact-view .example-title {
+            font-size: 1em;
+            margin-bottom: 4px;
+        }
+
+        .compact-view .description {
+            font-size: 0.85em;
+        }
+
+        /* Search Results Highlight */
+        .example-link.highlight {
+            background: #fff3cd;
+            border-color: #ffc107;
+            animation: pulse 0.5s ease;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .example-link.hidden {
+            display: none;
+        }
+
+        /* Keyboard Shortcut Hint */
+        .shortcut-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            z-index: 1000;
+            display: none;
+            max-width: 300px;
+        }
+
+        .shortcut-hint.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .shortcut-item {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .shortcut-key {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        /* Recently Viewed */
+        .recent-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: none;
+        }
+
+        .recent-section.has-items {
+            display: block;
+        }
+
+        .recent-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .recent-items {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .recent-item {
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9em;
+            transition: all 0.2s ease;
+        }
+
+        .recent-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -166,6 +406,35 @@
                 padding: 15px 20px;
                 font-size: 1.1em;
             }
+
+            .quick-tools {
+                flex-direction: column;
+            }
+
+            .search-container {
+                width: 100%;
+            }
+
+            .quick-actions {
+                width: 100%;
+            }
+
+            .quick-btn {
+                flex: 1;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .shortcut-hint {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -173,6 +442,40 @@
 <body>
     <div class="container">
         <h1>Frontend Questions - Examples</h1>
+
+        <!-- Quick Revision Tools -->
+        <div class="quick-tools">
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchBox" placeholder="Search problems... (Press '/' to focus)">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="quick-actions">
+                <button class="quick-btn" id="randomBtn">🎲 Random Problem</button>
+                <button class="quick-btn" id="expandAllBtn">📖 Expand All</button>
+                <button class="quick-btn" id="collapseAllBtn">📕 Collapse All</button>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stats-item">
+                <span>Total Problems:</span>
+                <span class="stats-number" id="totalProblems">0</span>
+            </div>
+            <div class="stats-item">
+                <span>View Mode:</span>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="normal">Normal</button>
+                    <button class="view-btn" data-view="compact">Compact</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <div class="recent-section" id="recentSection">
+            <div class="recent-title">📚 Recently Viewed</div>
+            <div class="recent-items" id="recentItems"></div>
+        </div>
 
         <!-- DOM Manipulation Category -->
         <div class="accordion">
@@ -267,7 +570,7 @@
             </button>
             <div class="accordion-content">
                 <div class="accordion-body">
-                    <a href="./datastructures-based/twoStack/index.html" class="example-link">
+                    <a href="./datastructures-based/twostack/index.html" class="example-link">
                         <div class="example-title">Two Stack Implementation</div>
                         <div class="description">Advanced data structure implementation using two stacks for efficient
                             operations</div>
@@ -505,11 +808,82 @@
         </div>
     </div>
 
+    <!-- Keyboard Shortcuts Hint -->
+    <div class="shortcut-hint" id="shortcutHint">
+        <div style="font-weight: 600; margin-bottom: 10px;">⌨️ Keyboard Shortcuts</div>
+        <div class="shortcut-item">
+            <span>/</span>
+            <span class="shortcut-key">Focus Search</span>
+        </div>
+        <div class="shortcut-item">
+            <span>R</span>
+            <span class="shortcut-key">Random Problem</span>
+        </div>
+        <div class="shortcut-item">
+            <span>Enter</span>
+            <span class="shortcut-key">Open First Result</span>
+        </div>
+        <div class="shortcut-item">
+            <span>?</span>
+            <span class="shortcut-key">Toggle Help</span>
+        </div>
+    </div>
+
     <script>
-        // Accordion functionality
+        // Quick Revision System
         document.addEventListener('DOMContentLoaded', function () {
             const accordionHeaders = document.querySelectorAll('.accordion-header');
+            const searchBox = document.getElementById('searchBox');
+            const randomBtn = document.getElementById('randomBtn');
+            const expandAllBtn = document.getElementById('expandAllBtn');
+            const collapseAllBtn = document.getElementById('collapseAllBtn');
+            const viewBtns = document.querySelectorAll('.view-btn');
+            const shortcutHint = document.getElementById('shortcutHint');
+            const recentSection = document.getElementById('recentSection');
+            const recentItems = document.getElementById('recentItems');
+            const totalProblemsEl = document.getElementById('totalProblems');
 
+            // Get all problem links
+            const allProblemLinks = Array.from(document.querySelectorAll('.example-link'));
+            totalProblemsEl.textContent = allProblemLinks.length;
+
+            // Initialize recently viewed from localStorage
+            let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
+            updateRecentSection();
+
+            // Track when a problem is viewed
+            allProblemLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const title = this.querySelector('.example-title').textContent;
+                    const href = this.getAttribute('href');
+                    
+                    // Remove if already exists
+                    recentlyViewed = recentlyViewed.filter(item => item.href !== href);
+                    
+                    // Add to beginning
+                    recentlyViewed.unshift({ title, href });
+                    
+                    // Keep only last 5
+                    recentlyViewed = recentlyViewed.slice(0, 5);
+                    
+                    localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+                    updateRecentSection();
+                });
+            });
+
+            function updateRecentSection() {
+                if (recentlyViewed.length === 0) {
+                    recentSection.classList.remove('has-items');
+                    return;
+                }
+                
+                recentSection.classList.add('has-items');
+                recentItems.innerHTML = recentlyViewed.map(item => 
+                    `<a href="${item.href}" class="recent-item">${item.title}</a>`
+                ).join('');
+            }
+
+            // Accordion functionality
             accordionHeaders.forEach(header => {
                 header.addEventListener('click', function () {
                     const content = this.nextElementSibling;
@@ -528,6 +902,167 @@
                     }
                 });
             });
+
+            // Search functionality
+            searchBox.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                let hasResults = false;
+
+                allProblemLinks.forEach(link => {
+                    const title = link.querySelector('.example-title').textContent.toLowerCase();
+                    const description = link.querySelector('.description').textContent.toLowerCase();
+                    const matches = title.includes(searchTerm) || description.includes(searchTerm);
+
+                    if (matches) {
+                        link.classList.remove('hidden');
+                        hasResults = true;
+                        
+                        // Highlight matching text
+                        if (searchTerm) {
+                            link.classList.add('highlight');
+                            setTimeout(() => link.classList.remove('highlight'), 500);
+                        }
+                    } else {
+                        link.classList.add('hidden');
+                    }
+                });
+
+                // Auto-expand categories with visible results
+                if (searchTerm) {
+                    accordionHeaders.forEach(header => {
+                        const content = header.nextElementSibling;
+                        const visibleLinks = content.querySelectorAll('.example-link:not(.hidden)');
+                        if (visibleLinks.length > 0) {
+                            header.classList.add('active');
+                            content.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // Random problem picker
+            function pickRandomProblem() {
+                const visibleLinks = allProblemLinks.filter(link => !link.classList.contains('hidden'));
+                if (visibleLinks.length === 0) {
+                    // If search is active, clear it first
+                    searchBox.value = '';
+                    searchBox.dispatchEvent(new Event('input'));
+                    pickRandomProblem();
+                    return;
+                }
+                
+                const randomLink = visibleLinks[Math.floor(Math.random() * visibleLinks.length)];
+                
+                // Scroll to and highlight
+                randomLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                randomLink.classList.add('highlight');
+                
+                // Open parent accordion
+                const accordion = randomLink.closest('.accordion');
+                const header = accordion.querySelector('.accordion-header');
+                if (!header.classList.contains('active')) {
+                    header.click();
+                }
+                
+                setTimeout(() => {
+                    randomLink.classList.remove('highlight');
+                }, 2000);
+            }
+
+            randomBtn.addEventListener('click', pickRandomProblem);
+
+            // Expand/Collapse All
+            expandAllBtn.addEventListener('click', function() {
+                accordionHeaders.forEach(header => {
+                    if (!header.classList.contains('active')) {
+                        header.click();
+                    }
+                });
+            });
+
+            collapseAllBtn.addEventListener('click', function() {
+                accordionHeaders.forEach(header => {
+                    if (header.classList.contains('active')) {
+                        header.click();
+                    }
+                });
+            });
+
+            // View mode toggle
+            viewBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    viewBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const container = document.querySelector('.container');
+                    if (this.dataset.view === 'compact') {
+                        container.classList.add('compact-view');
+                    } else {
+                        container.classList.remove('compact-view');
+                    }
+                });
+            });
+
+            // Keyboard shortcuts
+            let shortcutHintVisible = false;
+
+            document.addEventListener('keydown', function(e) {
+                // Don't trigger if typing in search box (unless it's a special key)
+                if (e.target === searchBox && !['/', 'Enter', 'Escape'].includes(e.key)) {
+                    return;
+                }
+
+                switch(e.key) {
+                    case '/':
+                        e.preventDefault();
+                        searchBox.focus();
+                        searchBox.select();
+                        break;
+                    case 'r':
+                    case 'R':
+                        if (e.target !== searchBox) {
+                            e.preventDefault();
+                            pickRandomProblem();
+                        }
+                        break;
+                    case 'Enter':
+                        if (e.target === searchBox) {
+                            e.preventDefault();
+                            const firstVisible = document.querySelector('.example-link:not(.hidden)');
+                            if (firstVisible) {
+                                firstVisible.click();
+                            }
+                        }
+                        break;
+                    case '?':
+                        e.preventDefault();
+                        shortcutHintVisible = !shortcutHintVisible;
+                        shortcutHint.classList.toggle('show', shortcutHintVisible);
+                        break;
+                    case 'Escape':
+                        if (e.target === searchBox) {
+                            searchBox.value = '';
+                            searchBox.dispatchEvent(new Event('input'));
+                            searchBox.blur();
+                        }
+                        shortcutHint.classList.remove('show');
+                        shortcutHintVisible = false;
+                        break;
+                }
+            });
+
+            // Show shortcut hint on first visit
+            if (!localStorage.getItem('shortcutHintShown')) {
+                setTimeout(() => {
+                    shortcutHint.classList.add('show');
+                    shortcutHintVisible = true;
+                    setTimeout(() => {
+                        shortcutHint.classList.remove('show');
+                        shortcutHintVisible = false;
+                        localStorage.setItem('shortcutHintShown', 'true');
+                    }, 5000);
+                }, 1000);
+            }
 
             // Open first accordion by default
             if (accordionHeaders.length > 0) {
