@@ -23,5 +23,18 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "closure",
+    "machineCoding",
+    "problemSolving",
+    "pollyfills",
+    "polyfillForPromiseCombinator",
+    "rateLimitingOnClientSide",
+    "datastructures-based",
+    "objectPrototype",
+    "timersRelated",
+    "getElementsByClassname",
+    "getElementsByClassNameHeirarchy"
+  ]
 }
