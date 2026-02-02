@@ -1,0 +1,317 @@
+[
+  {
+    "id": "get-elements-by-classname",
+    "title": "Get Elements By Classname",
+    "description": "Custom implementation of getElementsByClassName method for DOM traversal",
+    "category": "DOM Manipulation",
+    "path": "getElementsByClassname/index.ts"
+  },
+  {
+    "id": "get-elements-by-classname-hierarchy",
+    "title": "Get Elements By Classname Hierarchy",
+    "description": "Advanced getElementsByClassName with hierarchical element selection support",
+    "category": "DOM Manipulation",
+    "path": "getElementsByClassNameHeirarchy/index.js"
+  },
+  {
+    "id": "promise-all-polyfill",
+    "title": "Promise.all Polyfill",
+    "description": "Custom implementation of Promise.all for handling multiple asynchronous operations",
+    "category": "Promise & Async Operations",
+    "path": "polyfillForPromiseCombinator/promiseAll/index.ts"
+  },
+  {
+    "id": "execute-promises-in-sequence",
+    "title": "Execute Promises in Sequence",
+    "description": "Sequential promise execution using async/await for ordered operations",
+    "category": "Promise & Async Operations",
+    "path": "polyfillForPromiseCombinator/questionRelatedToPromises/executePromisesInSequence/index.ts"
+  },
+  {
+    "id": "execute-promises-in-parallel",
+    "title": "Execute Promises in Parallel",
+    "description": "Parallel promise execution using async/await for concurrent operations",
+    "category": "Promise & Async Operations",
+    "path": "polyfillForPromiseCombinator/questionRelatedToPromises/executePromisesInParallel/index.ts"
+  },
+  {
+    "id": "retry-promise-ntimes",
+    "title": "Retry Failed Promise N Times",
+    "description": "Robust error handling with configurable retry logic for failed promises",
+    "category": "Promise & Async Operations",
+    "path": "polyfillForPromiseCombinator/questionRelatedToPromises/retryPromiseNtimes/index.ts"
+  },
+  {
+    "id": "execute-promises-with-priority",
+    "title": "Execute Promises with Priority",
+    "description": "Priority-based promise execution system for managing task importance",
+    "category": "Promise & Async Operations",
+    "path": "polyfillForPromiseCombinator/questionRelatedToPromises/executePromisesWithPriority/index.ts"
+  },
+  {
+    "id": "debounce",
+    "title": "Debounce Implementation",
+    "description": "Client-side rate limiting using debounce technique for input optimization",
+    "category": "Rate Limiting & Performance",
+    "path": "rateLimitingOnClientSide/debounce/index.ts"
+  },
+  {
+    "id": "throttle",
+    "title": "Throttle Implementation",
+    "description": "Client-side rate limiting using throttle technique for event optimization",
+    "category": "Rate Limiting & Performance",
+    "path": "rateLimitingOnClientSide/throttle/index.ts"
+  },
+  {
+    "id": "two-stack",
+    "title": "Two Stack Implementation",
+    "description": "Advanced data structure implementation using two stacks for efficient operations",
+    "category": "Data Structures & Algorithms",
+    "path": "datastructures-based/twostack/index.ts"
+  },
+  {
+    "id": "hash-set",
+    "title": "HashSet Implementation",
+    "description": "Advanced data structure implementation using a hash set for efficient operations",
+    "category": "Data Structures & Algorithms",
+    "path": "datastructures-based/hashSet/index.ts"
+  },
+  {
+    "id": "custom-instanceof",
+    "title": "Custom InstanceOf Implementation",
+    "description": "Custom implementation of instanceof operator for prototype chain validation",
+    "category": "Object-Oriented Programming",
+    "path": "objectPrototype/customInstanceOf/index.ts"
+  },
+  {
+    "id": "pausable-timer",
+    "title": "Pausable Timer",
+    "description": "Advanced timer implementation with pause, resume, and reset functionality",
+    "category": "Timers & Utilities",
+    "path": "timersRelated/pausableTimer/index.ts"
+  },
+  {
+    "id": "toggle",
+    "title": "Closure - Toggle Implementation",
+    "description": "Advanced toggle implementation for cycling through different values",
+    "category": "Closure",
+    "path": "closure/toggle/index.ts"
+  },
+  {
+    "id": "sampler-function",
+    "title": "Closure - Sampler Function Implementation",
+    "description": "Advanced closure implementation for sampling values from a function",
+    "category": "Closure",
+    "path": "closure/samplerFunction/index.ts"
+  },
+  {
+    "id": "curry-function",
+    "title": "Closure - Curry Function Implementation",
+    "description": "Advanced closure implementation for currying functions",
+    "category": "Closure",
+    "path": "closure/curryFunction/index.ts"
+  },
+  {
+    "id": "dom-to-json",
+    "title": "Problem Solving - DOM To JSON",
+    "description": "Convert a DOM element to a JSON object",
+    "category": "Problem Solving",
+    "path": "problemSolving/DOMToJson/index.ts"
+  },
+  {
+    "id": "json-to-dom",
+    "title": "Problem Solving - JSON To DOM",
+    "description": "Convert a JSON object to a DOM element",
+    "category": "Problem Solving",
+    "path": "problemSolving/jsonToDOM/index.ts"
+  },
+  {
+    "id": "find-element-by-color",
+    "title": "Problem Solving - Find Element By Color",
+    "description": "Find all elements in the DOM tree that have the given color",
+    "category": "Problem Solving",
+    "path": "problemSolving/findElementByColor/index.ts"
+  },
+  {
+    "id": "get-by-classname-hierarchy",
+    "title": "Problem Solving - Get By Class Name Hierarchy",
+    "description": "Get all elements in the DOM tree that have the given class name with hierarchical selection",
+    "category": "Problem Solving",
+    "path": "problemSolving/getByClassNameHierarchy/index.ts"
+  },
+  {
+    "id": "find-by-class",
+    "title": "Problem Solving - Find By Class",
+    "description": "Find all elements in the DOM tree that have the given class name",
+    "category": "Problem Solving",
+    "path": "problemSolving/findByClass/index.ts"
+  },
+  {
+    "id": "cached-api-call",
+    "title": "Problem Solving - Cached API Call",
+    "description": "Implement a cached API call function that caches the response of an API call for a given time period",
+    "category": "Problem Solving",
+    "path": "problemSolving/cachedApiCall/index.ts"
+  },
+  {
+    "id": "lodash-get",
+    "title": "Problem Solving - Lodash Get Polyfill",
+    "description": "Implement lodash _.get() method to safely access nested object properties using path notation",
+    "category": "Problem Solving",
+    "path": "problemSolving/lodashGet/index.ts"
+  },
+  {
+    "id": "lodash-set",
+    "title": "Problem Solving - Lodash Set Polyfill",
+    "description": "Implement lodash _.set() method to safely set nested object properties using path notation",
+    "category": "Problem Solving",
+    "path": "problemSolving/lodashSet/index.ts"
+  },
+  {
+    "id": "aggregate-array-of-objects",
+    "title": "Problem Solving - Aggregate Array Of Objects",
+    "description": "Aggregate an array of objects on the given keys",
+    "category": "Problem Solving",
+    "path": "problemSolving/aggregateArrayOfObjects/index.ts"
+  },
+  {
+    "id": "filter-object-by-value-or-index",
+    "title": "Problem Solving - Filter Object By Value Or Index",
+    "description": "Filter an object by value or index",
+    "category": "Problem Solving",
+    "path": "problemSolving/filterObjectByValueOrIndex/index.ts"
+  },
+  {
+    "id": "array-iterator",
+    "title": "Problem Solving - Array Iterator",
+    "description": "Create a custom iterator with next() and done() methods to traverse array elements",
+    "category": "Problem Solving",
+    "path": "problemSolving/arrayIterator/index.ts"
+  },
+  {
+    "id": "remove-cycle-from-object",
+    "title": "Problem Solving - Remove Cycle From Object",
+    "description": "Advanced problem solving implementation for removing cycle from an object",
+    "category": "Problem Solving",
+    "path": "problemSolving/removeCycleFromObject/index.ts"
+  },
+  {
+    "id": "filter-multidimensional-array",
+    "title": "Problem Solving - Filter Multi Dimensional Array With Given Filter Function",
+    "description": "Advanced problem solving implementation for filtering multi dimensional array with given filter function",
+    "category": "Problem Solving",
+    "path": "problemSolving/filterMultiDimensionalArrWithGivenFilterFunc/index.ts"
+  },
+  {
+    "id": "memoize-function",
+    "title": "Problem Solving - Memoizer function",
+    "description": "A function that memorizes or caches the result for the given input so that the subsequent calls for the same inputs will be faster",
+    "category": "Problem Solving",
+    "path": "problemSolving/memoizeFunction/index.ts"
+  },
+  {
+    "id": "method-chaining-calculator",
+    "title": "Problem Solving - Method Chaining Calculator",
+    "description": "A calculator that supports method chaining for performing arithmetic operations calculator.add(10).subtract(2).divide(2).multiply(5); console.log(calculator.total); // 20",
+    "category": "Problem Solving",
+    "path": "problemSolving/methodChainingCalculator/index.ts"
+  },
+  {
+    "id": "chop-array-into-chunks",
+    "title": "Problem Solving - Chop Array Into Chunks",
+    "description": "Chop an array into chunks of a given size",
+    "category": "Problem Solving",
+    "path": "problemSolving/chopArrayIntoChunks/index.ts"
+  },
+  {
+    "id": "flatten-object",
+    "title": "Problem Solving - Flatten Object",
+    "description": "Flat a deeply nested object",
+    "category": "Problem Solving",
+    "path": "problemSolving/flattenObject/index.ts"
+  },
+  {
+    "id": "object-seal-and-freeze",
+    "title": "Problem Solving - Object Seal and Freeze",
+    "description": "Object deeply seal and freeze implementation using JavaScript",
+    "category": "Problem Solving",
+    "path": "problemSolving/objectSealAndFreeze/index.ts"
+  },
+  {
+    "id": "merge-two-objects",
+    "title": "Problem Solving - Merge two objects",
+    "description": "Merge two objects into a new object",
+    "category": "Problem Solving",
+    "path": "problemSolving/mergeTwoObjects/index.ts"
+  },
+  {
+    "id": "check-deep-equal-objects",
+    "title": "Problem Solving - Check Deep Equal Objects",
+    "description": "Check if two objects are deeply equal",
+    "category": "Problem Solving",
+    "path": "problemSolving/checkDeepEqualObjects/index.ts"
+  },
+  {
+    "id": "aggregate-form-inputs",
+    "title": "Problem Solving - Aggregate Form Inputs",
+    "description": "Aggregate form inputs into a single object",
+    "category": "Problem Solving",
+    "path": "problemSolving/aggregateFormInputs/index.ts"
+  },
+  {
+    "id": "piping-function",
+    "title": "Problem Solving - Piping Function",
+    "description": "Pass arguments through all functions in a nested object and return computed values",
+    "category": "Problem Solving",
+    "path": "problemSolving/pipingFunction/index.ts"
+  },
+  {
+    "id": "in-memory-filesystem",
+    "title": "In Memory FileSystem",
+    "description": "In memory file system implementation using JavaScript",
+    "category": "Machine Coding",
+    "path": "machineCoding/inMemoryFileSystem/index.ts"
+  },
+  {
+    "id": "digital-clock",
+    "title": "Digital Clock",
+    "description": "Digital clock implementation using JavaScript",
+    "category": "Machine Coding",
+    "path": "machineCoding/digitalClock/index.ts"
+  },
+  {
+    "id": "browser-history",
+    "title": "Browser History",
+    "description": "Design Browser History with visit, current, back, and forward methods",
+    "category": "Machine Coding",
+    "path": "machineCoding/browserHistory/index.ts"
+  },
+  {
+    "id": "singleton-pattern",
+    "title": "Singleton Pattern",
+    "description": "Design Singleton Pattern with getInstance method",
+    "category": "Machine Coding",
+    "path": "machineCoding/singeltonPattern/index.ts"
+  },
+  {
+    "id": "json-stringify",
+    "title": "JSON Stringify",
+    "description": "JSON stringify implementation using JavaScript",
+    "category": "Pollyfills",
+    "path": "pollyfills/JSON/stringify/index.ts"
+  },
+  {
+    "id": "clear-all-timeout",
+    "title": "Clear All Timeout",
+    "description": "Clear all timeouts implementation using JavaScript",
+    "category": "Pollyfills",
+    "path": "pollyfills/clearAllTimout/index.ts"
+  },
+  {
+    "id": "arrays-group-by",
+    "title": "Arrays Group By",
+    "description": "Group an array by a given key",
+    "category": "Pollyfills",
+    "path": "pollyfills/arraysGroupBy/index.ts"
+  }
+]
